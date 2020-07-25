@@ -14,7 +14,7 @@ gender = [(n,'Male') for n in names.words('male.txt')] + [(name,'FeMale') for na
 
 random.shuffle(gender)
 
-gender_feature = lambda word : {'feature-set':word[-1]}
+gender_feature = lambda word: {'feature-set':word[-1]}
 # The Above function is the same as
 #def gender_feature(word):
 #determine if a word is Gender or not
@@ -74,6 +74,7 @@ elif classifiers == 2:
 
 elif classifiers == 3:
     pass
+
     # print('*'* 80)
     # # Note
     # # nltk.classify.svm was deprecated.For classification based on support vector
